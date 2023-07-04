@@ -74,6 +74,11 @@ def get_month_filter():
 
 
 def get_day_filter():
+    """ Returns
+            (str) day entered by the user or all if no day filter is desired.
+    
+    """
+
     # get user input for day of week (all, monday, tuesday, ... sunday)
     days = [
         "Sunday",
