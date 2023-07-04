@@ -17,6 +17,13 @@ CITY_DATA = {
 
 MONTHS = ["january", "february", "march", "april", "may", "june"]
 
+def print_function_exec_time(n_sec):
+    """ Prints number of seconds it took a function to run.
+    
+    """
+    print("\nThis took {} seconds.".format(n_sec))
+    print("-" * 40)
+
 
 def get_city():
     """Get the city input from the user"""
@@ -200,8 +207,8 @@ def time_stats(df):
         )
     )
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print("-" * 40)
+    print_function_exec_time(time.time() - start_time)
+
 
 
 def station_stats(df):
