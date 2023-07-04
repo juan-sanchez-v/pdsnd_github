@@ -5,7 +5,7 @@
 Explore US Bikeshare Data
 
 ### Description
-Explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington to answer interesting descriptive statistics questions.
+Explore data related to bike share systems for three major cities in the United States -Chicago, New York City, and Washington- to answer interesting descriptive statistics questions.
 
 The project imports raw bike share data for three US cities and allows the user to interactively calculcate different descriptive statistics calculation.
 
