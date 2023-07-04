@@ -17,6 +17,13 @@ CITY_DATA = {
 
 MONTHS = ["january", "february", "march", "april", "may", "june"]
 
+def print_function_exec_time(n_sec):
+    """ Prints number of seconds it took a function to run.
+    
+    """
+    print("\nThis took {} seconds to complete.".format(n_sec))
+    print("-" * 40)
+
 
 def get_city():
     """Get the city string input from the user.
@@ -117,7 +124,7 @@ def get_day_filter():
     return day
 
 
-def get_filters():
+def get_data_filters():
     """
     Asks user to specify a city, month, and day to analyze.
 
@@ -210,8 +217,8 @@ def time_stats(df):
         )
     )
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print("-" * 40)
+    print_function_exec_time(time.time() - start_time)
+
 
 
 def station_stats(df):
@@ -239,8 +246,7 @@ def station_stats(df):
         )
     )
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print("-" * 40)
+    print_function_exec_time(time.time() - start_time)
 
 
 def trip_duration_stats(df):
@@ -330,7 +336,7 @@ def get_raw_data(df):
 
 def main():
     while True:
-        city, month, day = get_filters()
+        city, month, day = get_data_filters()
 
         df = load_data(city, month, day)
 
