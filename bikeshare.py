@@ -19,8 +19,13 @@ MONTHS = ["january", "february", "march", "april", "may", "june"]
 
 
 def get_city():
-    """Get the city input from the user"""
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    """Get the city string input from the user.
+
+        Returns the city string 
+    """
+
+    # get user input for city (chicago, new york city, washington). 
+    # HINT: Use a while loop to handle invalid inputs
     message = "Select a city to analyze. Available Choices: Chicago, New York City, Washington\nEnter your city choice here: "
     while True:
         city = input(message).lower()
