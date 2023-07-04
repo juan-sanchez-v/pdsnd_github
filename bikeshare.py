@@ -21,7 +21,7 @@ def print_function_exec_time(n_sec):
     """ Prints number of seconds it took a function to run.
     
     """
-    print("\nThis took {} seconds.".format(n_sec))
+    print("\nThis took {} seconds to complete.".format(n_sec))
     print("-" * 40)
 
 
@@ -236,8 +236,7 @@ def station_stats(df):
         )
     )
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print("-" * 40)
+    print_function_exec_time(time.time() - start_time)
 
 
 def trip_duration_stats(df):
